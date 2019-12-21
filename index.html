@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+
+        <title>My Bugged Planner</title>
+    </head>
+    <body>
+        <div class="top">
+            <div class="budget">
+                <div class="budget__title">
+                    Rencanakan Keuangan Anda Mulai Hari Ini <br>
+                    Catatlah Pemasukan dan Pengeluaran Anda Bulan <span class="budget__title--month">%Mon%</span>:
+                </div>
+
+                <div class="budget__value">+ 0,00</div>
+
+                <div class="budget__income clearfix">
+                    <div class="budget__income--text">Pemasukan Anda</div>
+                    <div class="right">
+                        <div class="budget__income--value">+ 0,00</div>
+                        <div class="budget__income--percentage">&nbsp;</div>
+                    </div>
+                </div>
+
+                <div class="budget__expenses clearfix">
+                    <div class="budget__expenses--text">Pengeluaran Anda</div>
+                    <div class="right clearfix">
+                        <div class="budget__expenses--value">- 0,00</div>
+                        <div class="budget__expenses--percentage">0%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bottom">
+            <div class="add">
+                <div class="add__container">
+                    <label><b>Pilih: Pemasukan (+) || Pengeluaran (-)</b></label>
+                    <select class="add__type">
+                        <option value="inc" selected>+</option>
+                        <option value="exp">-</option>
+                    </select>
+                    <input type="text" class="add__description" placeholder="Masukan Keterangan Disini">
+                    <input type="number" class="add__value" placeholder="Value">
+                    <button class="add__btn"><i class="ion-ios-checkmark-outline"></i></button>
+                </div>
+            </div>
+
+            <div class="container clearfix">
+                <div class="income">
+                    <h2 class="icome__title">Pemasukan</h2>
+<!-- OUTPUT PEMASUKAN ( INCOME )                   -->
+                    <div class="income__list">
+
+
+                    </div>
+                </div>
+
+
+<!-- OUTPUT PENGELUARAN ( EXPENSES ) -->
+                <div class="expenses">
+                    <h2 class="expenses__title">Pengeluaran</h2>
+                    <div class="expenses__list">
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="prosesHasil.js"></script>
+    </body>
+</html>
