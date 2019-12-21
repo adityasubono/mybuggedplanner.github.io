@@ -1,1 +1,1 @@
-# mybuggedplanner.github.io
+# mybudgetplanner.github.io
